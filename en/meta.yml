@@ -1,14 +1,10 @@
-title: Project title in sentence case
+title: Raspberry Pi Pico webserver
 hero_image: images/banner.png
-description: A short description of the project
+description: Serve a simple web page from a Raspberry Pi Pico 2 W
+version: 1
 listed: false
-pdf: false
+landing: true
+copyedit: false
+last_tested: "2026-04-24"
 steps:
-  - title: What you will make
-  - title: Step title
-    completion:
-      - engaged      
-  - title: Challenge
-    challenge: true
-    completion:
-      - external
+  - title: Serve a webpage from your Pico 2 W

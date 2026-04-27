@@ -1,45 +1,131 @@
-## What you will make
-OR
-## What you will do - change meta if you use this
+## Serve a webpage from your Pico 2 W
 
-A brief description - one or two sentences. 
+### Project files
 
---- print-only ---
+Download these files:
 
-![ALT TEXT](images/IMAGE.png)
+- [main.py](resources/main.py)
+- [index.html](resources/index.html)
 
---- /print-only ---
+### Create `secrets.py`
 
---- no-print ---
+--- task ---
 
-[Editor embed](https://editor.raspberrypi.org/en/embed/viewer/project-slug)
+In Thonny, create a new file called `secrets.py`.
 
---- /no-print ---
+Add your Wi-Fi name and password:
 
---- no-print ---
+```python
+WIFI_SSID = "YOUR_WIFI_NAME"
+WIFI_PASSWORD = "YOUR_WIFI_PASSWORD"
+```
 
-Video embed
+--- /task ---
 
-<video width="640" height="360" controls>
-<source src="images/videoname.mp4" type="video/mp4">
-</video>
+--- task ---
 
-Youtube embed 
-<html>
-<div style="position: relative; overflow: hidden; padding-top: 56.25%;">
-<iframe style="position: absolute; top: 0; left: 0; right: 0; width: 100%; height: 100%; border: none;" src="https://www.youtube.com/embed/XXXXXXXXX?rel=0&cc_load_policy=1" allowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
-</iframe>
-</div><br>
-</html>
+Save the `secrets.py` file **to the Pico**.
 
-Scratch embed
-<div class="scratch-preview">
- <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/XXXXXXXXX/?autostart=false" frameborder="0"></iframe>
-</div>
+![Thonny showing a new file called secrets.py with Wi-Fi credentials entered and the save-to-Pico option selected](images/create-secrets-py.png)
 
---- /no-print ---
+--- /task ---
 
-### You will need:
-- a
-- b
-- c
+### Upload `main.py`
+
+--- task ---
+
+Open the downloaded `main.py` in Thonny.
+
+Save it **to the Pico** as `main.py`.
+
+![Thonny showing the downloaded main.py file open and being saved to the Raspberry Pi Pico 2 W](images/upload-main-py.png)
+
+--- /task ---
+
+### Upload `index.html`
+
+--- task ---
+
+Open the downloaded `index.html`. You may have to change the file filter in Thonny to allow **all files** to be opened.
+
+![File chooser with the Filter menu set to all files (*) so index.html is selectable](images/change-file-filter.png)
+
+--- /task ---
+
+--- task ---
+
+Save the `index.html` **to the Pico**, and when prompted for a filename, **right-click** to create a new directory. 
+
+![The Save to Raspberry Pi Pico dialog in Thonny with the New directory option selected](images/new-directory.png)
+
+Call the new directory `www` and save the `index.html` file there.
+
+![The Raspberry Pi Pico 2 W file system in Thonny with a new folder called www being created](images/create-www-folder.png)
+
+![The Save to Raspberry Pi Pico dialog in Thonny showing the www folder open and index.html entered as the file name](images/save-index-to-www.png)
+
+--- /task ---
+
+### Run the web server
+
+--- task ---
+
+Go back to `main.py` and click **Run** in Thonny.
+
+If your Pico connects to Wi-Fi, it will print an IP address in the Shell.
+
+It will look something like this:
+
+```text
+Open http://192.168.0.45/
+```
+
+Make a note of the address.
+
+![The Thonny Shell showing the Pico 2 W printing its IP address after connecting to Wi-Fi](images/pico-ip-address-in-shell.png)
+
+--- /task ---
+
+### Open the page
+
+--- task ---
+
+Make sure the computer or phone you are using is on the same Wi-Fi network as the Pico.
+
+Type the Pico's IP address into a web browser.
+
+You should see your web page.
+
+![A browser on the local network displaying the simple Pico web page](images/browser-showing-pico-page.png)
+
+--- /task ---
+
+### Change the page
+
+--- task ---
+
+Open `www/index.html` on the Pico in Thonny.
+
+Change the text in the page, then save the file and refresh the browser.
+
+For example, you could change the heading and paragraph to something else.
+
+![Thonny showing index.html open for editing, with the browser beside it displaying the updated page](images/edit-index-html-and-refresh.png)
+
+--- /task ---
+
+### Test without Thonny
+
+--- task ---
+
+Disconnect the Pico from Thonny.
+
+Power it from USB using a normal power supply.
+
+Wait a few seconds for it to start, then visit the same IP address again.
+
+Your web page should still load.
+
+![A Raspberry Pi Pico 2 W powered from USB without a computer, serving the page to another device on the network](images/pico-powered-without-computer.png)
+
+--- /task ---
