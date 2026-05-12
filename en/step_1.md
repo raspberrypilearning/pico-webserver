@@ -1,8 +1,12 @@
 ## Serve a webpage from your Pico 2 W
 
+### Connect your Raspberry Pi Pico
+
+Connect your Raspberry Pi Pico to your computer, and access it using Thonny. [You can follow the instructions in this project if you need guidance.](https://projects.raspberrypi.org/en/projects/getting-started-with-the-pico/0)
+
 ### Project files
 
-Download these files:
+Download these project files:
 
 - [main.py](resources/main.py)
 - [index.html](resources/index.html)
