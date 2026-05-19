@@ -8,3 +8,4 @@ copyedit: false
 last_tested: "2026-04-24"
 steps:
   - title: Serve a webpage from your Pico 2 W
+  - title: Just a test
